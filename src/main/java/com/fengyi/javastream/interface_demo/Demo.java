@@ -12,5 +12,12 @@ public class Demo {
     LayEggCreature duck = new Duck();
     new EggFactory(chicken).produceEgg();
     new EggFactory(duck).produceEgg();
+    // anonymous inner class
+    new EggFactory(new LayEggCreature() {
+      @Override
+      public String layEgg() {
+        return "bird's egg";
+      }
+    }).produceEgg();
   }
 }
