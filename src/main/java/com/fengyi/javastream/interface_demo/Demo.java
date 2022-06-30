@@ -13,6 +13,7 @@ public class Demo {
     new EggFactory(chicken).produceEgg();
     new EggFactory(duck).produceEgg();
     // replace interface with lambda
-    new EggFactory(() -> "bird's egg").produceEgg();
+    LayEggCreature layEggCreature = () -> "bird's egg";
+    new EggFactory(layEggCreature).produceEgg();
   }
 }
