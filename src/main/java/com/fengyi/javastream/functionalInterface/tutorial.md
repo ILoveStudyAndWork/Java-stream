@@ -1,7 +1,7 @@
 # Java functional interface
 It's a interface has exactly one abstract method
 
-Basic functional interface
+## Basic functional interface
 - Function
   - receive T, return R
 - Predicate
@@ -11,4 +11,21 @@ Basic functional interface
 - supplier
   - receive void, return R
   
-Composite functional interface
+## Functional interface with primitive type
+
+- DoubleFunction
+- LongFunction
+- IntFunction
+- IntToDoubleFunction
+- IntToLongFunction
+- BooleanSupplier
+- intConsumer
+- intPredicate
+...
+
+## Composite functional interface
+- BiConsumer
+- BiFunction
+- UnaryOperator
+- BinaryOperator
+- IntBinaryOperator
